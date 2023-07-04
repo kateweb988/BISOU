@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: 'Majesti Banner Book';
+    src: url('/fonts/MajestiBanner-Book.eot');
+    src: url('/fonts/MajestiBanner-Book.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MajestiBanner-Book.woff2') format('woff2'),
+        url('/fonts/MajestiBanner-Book.woff') format('woff'),
+        url('/fonts/MajestiBanner-Book.ttf') format('truetype'),
+        url('/fonts/MajestiBanner-Book.svg#MajestiBanner-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

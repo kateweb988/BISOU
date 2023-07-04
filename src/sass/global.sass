@@ -1,0 +1,146 @@
+body
+   font-family: 'Golos Text', sans-serif
+   background: #fefefe
+   font-weight: 400
+   font-size: 16px
+   line-height: 120%
+   color: #282828
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $green
+.container
+   padding: 0 15px
+   max-width: 1631px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px 
+   @media (max-width: 991px)
+      max-width: 720px 
+   @media (max-width: 767px)
+      max-width: 540px 
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   margin: 0
+   font-family: 'Majesti Banner Book'
+   color: #201600
+   font-size: 80px
+   line-height: 50px
+   text-align: left
+   text-transform: uppercase
+   font-weight: 400
+h2 
+   margin: 0
+   font-size: 35px
+   font-weight: 400
+   line-height: 45px
+   text-align: center
+.green 
+   color: $green
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+   transition: 0.5s ease
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $green !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $green !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $green
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 5px
+   width: 5px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $green
+   border-radius: 6px
+.tabs__nav 
+   scrollbar-width: thin
+   scrollbar-color: blue transparent
+.tabs__nav::-webkit-scrollbar,
+.tabs__nav::-webkit-scrollbar,
+.nav__list::-webkit-scrollbar,
+.nav__list::-webkit-scrollbar 
+   height: 2px
+   width: 2px
+.tabs__nav::-webkit-scrollbar-track,
+.tabs__nav::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+.tabs__nav::-webkit-scrollbar-thumb,
+.tabs__nav::-webkit-scrollbar-thumb 
+   background-color: $black
+   border-radius: 6px
+.menu2.active::-webkit-scrollbar,
+.menu2.active::-webkit-scrollbar 
+   height: 0px
+   width: 0px
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   width: 125px
+   height: 41px
+   border-radius: 21px
+   background-color: $black
+   color: #e6e3e3;
+   font-size: 15px
+   font-weight: 600
+   text-transform: uppercase
+   &:hover 
+      background: transparent 
+      border: 1px solid $black
+      color: $black
