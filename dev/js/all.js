@@ -769,8 +769,6 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesToScroll: 1,
       fade: true,
       slidesToScroll: 1,
-      prevArrow: '<button type="button" class="slick-prev"><img src="/img/le.png"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="/img/ri.png"></button>',
       asNavFor: '.slider-nav',
       responsive: [
         {
@@ -795,11 +793,9 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     });
     $('.slider-nav').slick({
-      slidesToShow: 4,
+      slidesToShow: 5,
       slidesToScroll: 1,
       asNavFor: '.slider',
-      prevArrow: '<button type="button" class="slick-prev"><img src="/img/1.png"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="/img/2.png"></button>',
       focusOnSelect: true,
       vertical: true,
       responsive: [
@@ -1394,6 +1390,37 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next4',
       prevEl: '.swiper-button-prev4',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        spaceBetween: 0,
+        loop: true,
+        slidesPerView: 1
+      },
+      767: {
+        spaceBetween: 10,
+        slidesPerView: 2
+      },
+      992: {
+        spaceBetween: 20,
+        slidesPerView: 3
+      },
+      1200: {
+        spaceBetween: 22,
+        slidesPerView: 5
+      }
+    }
+  });
+  const swiper45 = new Swiper('.swiper45', {
+    slidesPerView: 5,
+    spaceBetween: 22,
+    pagination: {
+      el: ".swiper-pagination45",
+    },
+    navigation: {
+      nextEl: '.swiper-button-next45',
+      prevEl: '.swiper-button-prev45',
     },
     breakpoints: {
       // when window width is >= 320px

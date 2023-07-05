@@ -1,6 +1,11 @@
 @media screen and (max-width: 1600px)
    .cat .pop__item 
       width: 18.8%
+   .sales__item 
+      width: 32.505%
+   .slider
+      max-width: 500px
+      height: 700px
 @media screen and (max-width: 1500px)
    .pop__pic
       height: 300px
@@ -11,6 +16,8 @@
       right: -10px
    .cat .pop__item 
       width: 18.7%
+   .art__name
+      padding-right: 13px
 @media screen and (max-width: 1400px)
    .nav__ul
       margin-right: 27px
@@ -20,6 +27,15 @@
       margin-left: 50px
    .cat .pop__item 
       width: 18.6%
+   .blog .tabs__nav
+      margin-left: 50px
+   .sales__item 
+      width: 32.35%
+   .care__block:nth-child(1)
+      padding-left: 30px
+   .slider 
+      max-width: 400px
+      height: 600px
 @media screen and (max-width: 1300px)
    .footer__item:last-child
       max-width: 250px
@@ -31,6 +47,16 @@
       font-size: 14px
    .cat .pop__item 
       width: 18.49%
+   .contacts .cont__flex
+      margin-left: 0
+   .contacts__item:after
+      right: -22px
+   .card__info
+      max-width: 52%
+   .card__content
+      margin-right: 50px
+   .card__el
+      font-size: 12px
 @media screen and (max-width: 1199px)
    .nav__top p
       font-size: 10px
@@ -148,6 +174,69 @@
       width: 23.2%
    .cat .pop__item:nth-child(4n)
       margin-right: 0
+   .contacts .cont__flex
+      margin-left: 0
+      margin-top: 40px
+      margin-bottom: 40px
+   .contacts__box 
+      flex-direction: column
+   .contacts__pic 
+      width: 100%
+      margin-right: 0
+   .contacts__content
+      margin: 25px auto
+   .contacts__row
+      flex-wrap: wrap
+      margin-bottom: 25px
+   .contacts__item:after
+      display: none
+   .contacts__item 
+      align-items: baseline
+      width: 50%
+      justify-content: initial
+      margin-bottom: 25px
+   .contacts__block img 
+      bottom: -30px
+      position: absolute
+      right: 50%
+      top: inherit
+      margin-right: -17px
+      transform: rotate(90deg)
+   .blog__box
+      flex-direction: column-reverse
+      align-items: center
+   .blog .tabs__nav 
+      margin-left: 0
+      margin-bottom: 40px
+      flex-direction: initial
+      overflow-x: auto
+      max-width: 100%
+   .blog .tabs__nav a
+      white-space: nowrap
+      margin-right: 25px
+   .blog__item
+      width: 30.5%
+   .sales__item:nth-child(3n)
+      margin-right: 17px
+   .sales__item:nth-child(2n)
+      margin-right: 0
+   .sales__item 
+      width: 48.99%
+   .care__box
+      height: 600px
+   .care__block
+      padding-bottom: 60px !important
+   .brands__box
+      flex-wrap: wrap 
+   .brands__item 
+      width: 47.5%
+      margin-bottom: 60px
+   .card__box
+      flex-direction: column
+      align-items: center
+   .card__info 
+      max-width: 100%
+      margin-left: 0
 @media ( max-width: 991px )
    input, textarea, select
       -webkit-appearance: none
@@ -189,7 +278,92 @@
       position: relative
       top: 0
       margin-top: 40px
+   .par__box
+      flex-direction: column
+   .par__left
+      max-width: 100%
+   .par__title
+      line-height: 120%
+   .par__left img
+      margin-bottom: 30px
+   .par__right
+      max-width: 100%
+      width: 100%
+      margin-top: 30px
+   .par__title
+      text-align: center
+   .blog__item:nth-child(3n)
+      margin-right: 20px
+   .blog__item
+      margin-right: 20px
+      margin-bottom: 20px
+      width: 48.5%
+   .blog__item:nth-child(2n)
+      margin-right: 0
+   .sales__item 
+      width: 100% !important
+      margin-right: 0 !important
+   .item__row
+      flex-wrap: wrap
+      justify-content: space-between
+   .item__block
+      margin-right: 0
+      width: 31%
+      margin-bottom: 25px
+   .item__sub
+      margin-bottom: 40px
+   .item__row
+      margin-bottom: 20px
+   .item__flex 
+      margin-bottom: 20px
+      flex-wrap: wrap
+   .item__flex .style1 
+      width: 30.242%
+      right: 0
+      margin-bottom: 25px
+      z-index: 1
+   .item__flex .style1 .selectCF .titleCF
+      font-size: 12px
+      padding-bottom: 10px
+   .style1, .style2, .style3 
+      position: relative
+      z-index: 10 !important
+   .style4, .style5, .style6
+      position: relative
+      z-index: 5 !important
+   .item 
+      .selectCF li ul li
+         height: 35px
+         font-size: 13px !important
+   .item__flex
+      padding: 0 20px
 @media screen and (max-width: 767px)
+   .slider-nav
+      display: none !important
+   .slick-dots
+      display: flex
+      justify-content: center
+      margin-top: 20px
+      li 
+         width: 52px
+         height: 2px
+         margin-right: 10px
+         overflow: hidden
+         button
+            width: 100%
+            height: 100%
+            border: none
+            background-color: #d0d0d0
+            opacity: 1
+         &:last-child
+            margin-right: 0
+      .slick-active
+         button 
+            background: $green
+   .slider
+      height: auto
+      .slick-slide
+         padding: 40px 20px
    .footer__content
       flex-direction: column 
       align-items: center
@@ -242,6 +416,47 @@
       margin-right: 0 !important
    .cat__show
       margin-left: 0
+   .contacts__item
+      width: 46%
+   .blog__item
+      width: 48%
+   .care__box
+      flex-direction: column
+      height: auto
+   .care__block
+      width: 100%
+      height: 400px
+      padding-left: 20px !important
+   .care h1
+      text-align: left
+   .care__content p 
+      font-size: 21px
+      line-height: 28px
+      margin-bottom: 21px  
+   .brands__sub
+      margin-bottom: 40px
+   .brands__item
+      width: 100%
+   .brands__text 
+      margin: 20px 0
+      font-size: 12px
+      line-height: 22px
+      padding-right: 25px
+   .brands
+      padding-bottom: 40px
+   .slider
+      max-width: 400px
+   .slick-dots 
+      margin-top: 10px
+      margin-bottom: 50px
+      .slick-active
+         button
+            background: black
+   .card__flex
+      flex-direction: column
+   .card__content
+      margin-right: 0
+      margin-bottom: 35px
 @media screen and (max-width: 576px)
    button:active, button:focus 
       outline: none
@@ -318,7 +533,7 @@
       margin-top: 30px
    .tabs__nav a
       margin-right: 40px
-   .pop .swiper4
+   .pop .swiper4,  .pop .swiper45
       margin-top: 30px
    .pop__name 
       font-size: 14px
@@ -326,7 +541,7 @@
       line-height: 19px
    .pop__info, .pop__text
       font-size: 13px
-   .pop .swiper-pagination4
+   .pop .swiper-pagination4, .pop .swiper-pagination45
       margin-top: 40px
    .pop-arr
       display: none
@@ -364,8 +579,8 @@
       margin-left: 40px
    .art__name 
       margin: 12px 40px 20px 0
-   .art .swiper44 .swiper-slide
-      height: auto
+   .art .swiper44 .swiper-slide, .blog__item
+      height: inherit
    .art 
       padding: 40px 0 120px
       .container
@@ -414,5 +629,145 @@
    .page h1 
       font-size: 25px
       line-height: 34px
+   .par__left img
+      height: auto
+      margin-bottom: 20px
+   .par__box
+      margin-top: 25px
+   .par__text 
+      font-size: 14px
+      line-height: 26px
+      margin-bottom: 15px
+   .par__name 
+      font-size: 14px
+      line-height: 26px
+      margin-bottom: 10px
+   .par__left ul li 
+      font-size: 14px
+      line-height: 25px
+   .par__left ul
+      margin-bottom: 20px
+   .par__title
+      font-size: 21px
+      margin-bottom: 30px
+   .par__form input 
+      font-size: 12px
+      padding-bottom: 15px
+      margin-bottom: 20px
+   .par__form label
+      font-size: 12px
+      margin-bottom: 15px
+   .par__form button
+      width: 100%
+   .par__form textarea
+      margin-bottom: 25px
+      font-size: 12px
+      padding-left: 10px
+   .par
+      padding-bottom: 60px
+   .contacts__item
+      width: 100%
+   .contacts__row
+      margin: 40px 0 15px
+   .contacts__img
+      display: none
+   .contacts__content
+      margin-top: 0
+   .contacts #map
+      height: 350px
+   .blog__item
+      width: 100% !important
+      margin-right: 0 !important
+      margin-bottom: 30px
+      &:last-child
+         margin-bottom: 0
+   .sales__info
+      font-size: 60px
+   .sales .sales__item:nth-child(1) .sales__info span,  .sales .sales__item:nth-child(3) .sales__info span 
+      font-size: 32px
+      top: -38px
+      margin-right: 10px
+      &:after 
+         width: 47px
+   .sales__name 
+      font-size: 18px
+      line-height: 27px
+      margin-bottom: 18px
+   .sales__text
+      font-size: 14px
+      br 
+         display: none
+   .sales__item
+      height: auto
+   .sales__block 
+      height: 304px
+      margin-bottom: 23px
+      padding: 75px 20px 20px
+      max-height: 279px
+      max-width: 100%
+   .sales .sales__item:nth-child(6) .sales__name span
+      font-size: 35px
+   .sales .sales__item:nth-child(6) .sales__block
+      padding-top: 60px
+   .sales__box
+      margin-top: 30px
+   .care .bread
+      margin-bottom: 20px
+   .care__block:nth-child(1)
+      padding-top: 20px
+   .brands__btn
+      width: 100%
+   .brands__sub
+      font-size: 14px
+      margin: 25px 0 !important
+   .item__block 
+      width: 48%
+      margin-bottom: 11px
+      padding: 20px
+      img
+         width: auto
+         max-height: 40px
+   .item__flex .style1 
+      width: 45.242%
+   .item__sub
+      margin-bottom: 25px
+   .item__flex
+      .style1, .style2 
+         z-index: 10 !important
+      .style3, .style4 
+         z-index: 9 !important
+      .style5, .style6
+         z-index: 8 !important
+      .selectCF .searchCF input
+         position: absolute
+         left: -200px
+         pointer-events: none
+   .card__el
+      width: auto
+      border-bottom: none 
+      line-height: 140%
+      font-size: 10px
+   .card
+      padding-top: 30px
+   .slider
+      width: 100%
+      max-width: 300px
+   .card__name
+      font-size: 18px
+      margin: 20px 0 5px
+   .card__title
+      line-height: 120%
+      font-size: 24px
+   .card__top
+      flex-direction: column-reverse
+      text-align: center
+   .card__stars
+      margin-bottom: 25px
+   .card-title 
+      font-size: 21px
+      line-height: 33px
+      margin-bottom: -10px
+      margin-top: 10px
+      text-align: center
 
 
