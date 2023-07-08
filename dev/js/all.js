@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // option
       var settings = $.extend({
-        color: "#888888", // color
+        color: "#888888", // colorа
         backgroundColor: "#FFFFFF", // background
         change: function () { }, // event change
       }, options);

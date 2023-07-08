@@ -262,7 +262,7 @@ div {
 
 html * {
   scrollbar-width: thin;
-  scrollbar-color: blue #bed3b9; }
+  scrollbar-color: blue #000000; }
 
 *::-webkit-scrollbar,
 html *::-webkit-scrollbar {
@@ -272,12 +272,12 @@ html *::-webkit-scrollbar {
 *::-webkit-scrollbar-track,
 html *::-webkit-scrollbar-track {
   background: #E7E7E7;
-  border-radius: 3px; }
+  border-radius: 8px; }
 
 *::-webkit-scrollbar-thumb,
 html *::-webkit-scrollbar-thumb {
-  background-color: #bed3b9;
-  border-radius: 6px; }
+  background-color: #000000;
+  border-radius: 8px; }
 
 .tabs__nav {
   scrollbar-width: thin;
@@ -293,12 +293,12 @@ html *::-webkit-scrollbar-thumb {
 .tabs__nav::-webkit-scrollbar-track,
 .tabs__nav::-webkit-scrollbar-track {
   background: #E7E7E7;
-  border-radius: 3px; }
+  border-radius: 8px; }
 
 .tabs__nav::-webkit-scrollbar-thumb,
 .tabs__nav::-webkit-scrollbar-thumb {
   background-color: #000000;
-  border-radius: 6px; }
+  border-radius: 8px; }
 
 .menu2.active::-webkit-scrollbar,
 .menu2.active::-webkit-scrollbar {
@@ -1243,7 +1243,8 @@ input[type="range"] {
     object-fit: cover;
     display: block;
     text-align: center;
-    margin: 0 auto 12px; }
+    margin: 0 auto 12px;
+    max-width: 302px; }
   .pop__item {
     padding: 0px;
     position: relative; }
@@ -1380,7 +1381,8 @@ input[type="range"] {
       margin-top: 4px;
       line-height: 21px;
       text-align: center;
-      text-shadow: 0 0 black; }
+      text-shadow: 0 0 black;
+      color: #282828; }
     .logos__item:hover p {
       color: #bed3b9; }
 
@@ -1458,11 +1460,11 @@ input[type="range"] {
 
 .pop2 {
   background-image: linear-gradient(to top, #f7f7f7 0%, #ffffff 100%);
-  padding-top: 85px; }
+  padding-top: 62.25px; }
 
 .footer {
   background: #000000;
-  padding: 60px 0 20px; }
+  padding: 55px 0 20px; }
   .footer__box {
     justify-content: space-between; }
   .footer__left {
@@ -1963,7 +1965,9 @@ input[type="range"] {
   .contacts .contacts__item .footer__socials {
     position: relative; }
     .contacts .contacts__item .footer__socials a {
-      margin-right: 9px; }
+      margin-right: 9px;
+      width: 40px;
+      height: 40px; }
       .contacts .contacts__item .footer__socials a img {
         margin-right: 0;
         top: 0; }
@@ -1978,7 +1982,7 @@ input[type="range"] {
     border: 5px solid #e0e0e0;
     height: auto;
     text-align: center;
-    padding: 45px 20px 49px; }
+    padding: 43px 20px 46.82px; }
     .contacts__block img {
       position: absolute;
       right: -24px;
@@ -1993,6 +1997,9 @@ input[type="range"] {
 
 .blog {
   padding-bottom: 100px; }
+  .blog .art__name {
+    font-size: 15px;
+    line-height: 27px; }
   .blog__item {
     overflow: hidden;
     position: relative;
@@ -2216,7 +2223,8 @@ input[type="range"] {
     width: 100%;
     max-width: 1300px;
     margin: 37px 0 75px;
-    text-shadow: 0.5px 0px black; }
+    text-shadow: 0.5px 0px black;
+    font-size: 15px; }
   .brands__box {
     justify-content: space-between; }
   .brands__item {
@@ -2434,7 +2442,7 @@ input[type="range"] {
     color: #282828;
     font-size: 13px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 500;
     padding: 27px 0;
     border-bottom: 1px solid #efefef; }
     .card .accordeon__button:after {
@@ -2567,7 +2575,7 @@ input[type="range"] {
   .nav__ul {
     margin-right: 35px; }
   .art__name {
-    font-size: 14px; }
+    font-size: 14px !important; }
   .cat .pop__item {
     width: 18.49%; }
   .contacts .cont__flex {
