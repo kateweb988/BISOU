@@ -52,6 +52,53 @@ document.addEventListener("DOMContentLoaded", () => {
   new ItcTabs('.tabs');
 });
 document.addEventListener("DOMContentLoaded", () => {
+  //popup1
+  let popupBg = document.querySelector('.popup__bg');
+  let popup = document.querySelector('.popup');
+  let openPopupButtons = document.querySelectorAll('.a1, .info__btn');
+  let closePopupButton = document.querySelector('.close-popup');
+
+  openPopupButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg.classList.add('active');
+      popup.classList.add('active');
+    })
+  });
+
+  closePopupButton.addEventListener('click', () => {
+    popupBg.classList.remove('active');
+    popup.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg) {
+      popupBg.classList.remove('active');
+      popup.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg.classList.remove('active');
+      popup.classList.remove('active');
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg) {
+      popupBg.classList.remove('active');
+      popup.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg3.classList.remove('active');
+      popup3.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
   class ItcTabs {
     constructor(target, config) {
       const defaultConfig = {};
@@ -945,312 +992,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return false;
   });
 });
-document.addEventListener("DOMContentLoaded", () => {
-  //popup1
-  let popupBg = document.querySelector('.popup__bg');
-  let popup = document.querySelector('.popup');
-  let openPopupButtons = document.querySelectorAll('.a1');
-  let closePopupButton = document.querySelector('.close-popup');
-
-  openPopupButtons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg.classList.add('active');
-      popup.classList.add('active');
-    })
-  });
-
-  closePopupButton.addEventListener('click', () => {
-    popupBg.classList.remove('active');
-    popup.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg) {
-      popupBg.classList.remove('active');
-      popup.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg.classList.remove('active');
-      popup.classList.remove('active');
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  //popup2
-  let popupBg2 = document.querySelector('.popup__bg2');
-  let popup2 = document.querySelector('.popup2');
-  let openPopupButtons2 = document.querySelectorAll('.a2');
-  let closePopupButton2 = document.querySelector('.close-popup2');
-
-  openPopupButtons2.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg2.classList.add('active');
-      popup2.classList.add('active');
-    })
-  });
-
-  closePopupButton2.addEventListener('click', () => {
-    popupBg2.classList.remove('active');
-    popup2.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg2) {
-      popupBg2.classList.remove('active');
-      popup2.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg2.classList.remove('active');
-      popup2.classList.remove('active');
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  //popup3
-  let popupBg3 = document.querySelector('.popup__bg3');
-  let popup3 = document.querySelector('.popup3');
-  let openPopupButtons3 = document.querySelectorAll('.a3');
-  let closePopupButton3 = document.querySelector('.close-popup3');
-
-  openPopupButtons3.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg3.classList.add('active');
-      popup3.classList.add('active');
-    })
-  });
-
-  closePopupButton3.addEventListener('click', () => {
-    popupBg3.classList.remove('active');
-    popup3.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg3) {
-      popupBg3.classList.remove('active');
-      popup3.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg3.classList.remove('active');
-      popup3.classList.remove('active');
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  //popup4
-  let popupBg4 = document.querySelector('.popup__bg4');
-  let popup4 = document.querySelector('.popup4');
-  let openPopupButtons4 = document.querySelectorAll('.a4');
-  let closePopupButton4 = document.querySelector('.close-popup4');
-
-  openPopupButtons4.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg4.classList.add('active');
-      popup4.classList.add('active');
-    })
-  });
-
-  closePopupButton4.addEventListener('click', () => {
-    popupBg4.classList.remove('active');
-    popup4.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg4) {
-      popupBg4.classList.remove('active');
-      popup4.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg4.classList.remove('active');
-      popup4.classList.remove('active');
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  //popup5
-  let popupBg5 = document.querySelector('.popup__bg5');
-  let popup5 = document.querySelector('.popup5');
-  let openPopupButtons5 = document.querySelectorAll('.a5');
-  let closePopupButton5 = document.querySelector('.close-popup5');
-
-  openPopupButtons5.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg5.classList.add('active');
-      popup5.classList.add('active');
-    })
-  });
-
-  closePopupButton5.addEventListener('click', () => {
-    popupBg5.classList.remove('active');
-    popup5.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg5) {
-      popupBg5.classList.remove('active');
-      popup5.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg5.classList.remove('active');
-      popup5.classList.remove('active');
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  //popup6
-  let popupBg6 = document.querySelector('.popup__bg6');
-  let popup6 = document.querySelector('.popup6');
-  let openPopupButtons6 = document.querySelectorAll('.a6');
-  let closePopupButton6 = document.querySelector('.close-popup6');
-
-  openPopupButtons6.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg6.classList.add('active');
-      popup6.classList.add('active');
-    })
-  });
-
-  closePopupButton6.addEventListener('click', () => {
-    popupBg6.classList.remove('active');
-    popup6.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg6) {
-      popupBg6.classList.remove('active');
-      popup6.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg6.classList.remove('active');
-      popup6.classList.remove('active');
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  //popup7
-  let popupBg7 = document.querySelector('.popup__bg7');
-  let popup7 = document.querySelector('.popup7');
-  let openPopupButtons7 = document.querySelectorAll('.a7');
-  let closePopupButton7 = document.querySelector('.close-popup7');
-
-  openPopupButtons7.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg7.classList.add('active');
-      popup7.classList.add('active');
-    })
-  });
-
-  closePopupButton7.addEventListener('click', () => {
-    popupBg7.classList.remove('active');
-    popup7.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg7) {
-      popupBg7.classList.remove('active');
-      popup7.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg7.classList.remove('active');
-      popup7.classList.remove('active');
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  //popup8
-  let popupBg8 = document.querySelector('.popup__bg8');
-  let popup8 = document.querySelector('.popup8');
-  let openPopupButtons8 = document.querySelectorAll('.a8');
-  let closePopupButton8 = document.querySelector('.close-popup8');
-
-  openPopupButtons8.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg8.classList.add('active');
-      popup8.classList.add('active');
-    })
-  });
-
-  closePopupButton8.addEventListener('click', () => {
-    popupBg8.classList.remove('active');
-    popup8.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg8) {
-      popupBg8.classList.remove('active');
-      popup8.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg8.classList.remove('active');
-      popup8.classList.remove('active');
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  //popup9
-  let popupBg9 = document.querySelector('.popup__bg9');
-  let popup9 = document.querySelector('.popup9');
-  let openPopupButtons9 = document.querySelectorAll('.a9');
-  let closePopupButton9 = document.querySelector('.close-popup9');
-
-  openPopupButtons9.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popupBg9.classList.add('active');
-      popup9.classList.add('active');
-    })
-  });
-
-  closePopupButton9.addEventListener('click', () => {
-    popupBg9.classList.remove('active');
-    popup9.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg9) {
-      popupBg9.classList.remove('active');
-      popup9.classList.remove('active');
-    }
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      //ваша функция закрытия окна
-      popupBg9.classList.remove('active');
-      popup9.classList.remove('active');
-    }
-  });
-});
 document.addEventListener('DOMContentLoaded', function () {
   $('.my').change(function () {
     if ($(this).val() != '') $(this).prev().text('Выбрано файлов: ' + $(this)[0].files.length);
@@ -1394,9 +1135,9 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        spaceBetween: 0,
+        spaceBetween: 10,
         loop: true,
-        slidesPerView: 1
+        slidesPerView: 2
       },
       767: {
         spaceBetween: 10,
@@ -1425,9 +1166,9 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        spaceBetween: 0,
+        spaceBetween: 10,
         loop: true,
-        slidesPerView: 1
+        slidesPerView: 2
       },
       767: {
         spaceBetween: 10,
@@ -1456,9 +1197,9 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        spaceBetween: 0,
+        spaceBetween: 10,
         loop: true,
-        slidesPerView: 1
+        slidesPerView: 2
       },
       767: {
         spaceBetween: 20,

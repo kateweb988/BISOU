@@ -85,31 +85,42 @@
 	</div>
 	<div class="popup__bg" id="popup">
 		<div class="popup">
-			<img src="/img/close.png" alt="" class="close-popup">
+			<a href="#" class="close-popup">
+				<img src="/img/close.svg" alt="" class="svg">
+			</a>
 			<div class="popup__wrap">
-				<p class="popup__title">
-					Вам исполнилось 18 лет?
-				</p>
-				<p class="popup__text">
-					Согласно статье 14. 16 КоАП РФ “Нарушение правил продажи этилового
-					спирта, алкогольной и спиртосодержащей продукции” запрещена
-					продажа спиртосодержащей продукции несовершеннолетним.
-				</p>
-				<p class="popup__text">
-					Мы используем файлы cookie. Оставаясь на этом весайте, Вы выражаете
-					полное согласие на хранение и использование файлов cookie для
-					работоспособности и улучшения использования сайта.
-				</p>
-				<p class="popup__text">
-					Если Вам меньше 18 лет, пожалуйста, покиньте сайт
-				</p>
-				<div class="popup__links d-flex">
-					<a href="#" class="popup__btn1 btn">
-						Да, мне есть 18 лет
-					</a>
-					<a href="#" class="popup__btn2 btn">
-						Мне нет 18 лет
-					</a>
+				<div class="popup__content">
+					<p class="popup__title">
+						Заказать звонок
+					</p>
+					<p class="popup__text">
+						Оставьте заявку и мы перезвоним <br>
+						Вам в ближайшее время
+					</p>
+					<form action="#" class="popup__form">
+						<div class="popup__item">
+							<label>Ваше имя</label>
+							<input type="text" name="name" placeholder="Иванов Иван">
+						</div>
+						<div class="popup__item">
+							<label>Ваш номер телефона</label>
+							<input type="tel" name="tel" placeholder="+7 999 999 99 99" class="tel">
+						</div>
+						<div class="popup__item">
+							<label>Почта</label>
+							<input type="email" name="email" placeholder="mail@google.com" class="tel">
+						</div>
+						<div class="checkbox">
+							<input class="custom-checkbox" checked="" type="checkbox" id="2">
+							<label for="2">
+								<p>Отправляя заявку, я соглашаюсь <br>
+									на обработку персональных данных</p>
+							</label>
+						</div>
+						<button class="popup__btn btn">
+							Отправить заявку
+						</button>
+					</form>
 				</div>
 			</div>
 		</div>
